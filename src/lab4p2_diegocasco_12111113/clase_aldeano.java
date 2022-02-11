@@ -14,6 +14,24 @@ import java.util.ArrayList;
 public class clase_aldeano extends Aldeano {
     private int ataque;
 
+    clase_aldeano() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public int getAtaque() {
+        return ataque;
+    }
+
+    public void setAtaque(int ataque) {
+        this.ataque = ataque;
+    }
+
+    public clase_aldeano(int ataque, String nombre, String clase, int vida, String Apellido, ArrayList<Aldeano> Aldeanos) {
+        super(nombre, clase, vida, Apellido, Aldeanos);
+        this.ataque = ataque;
+    }
+    
+
 
     
 }

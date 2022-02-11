@@ -45,6 +45,11 @@ public class Familias {
         this.Aldeanos = Aldeanos;
     }
 
+    @Override
+    public String toString() {
+        return "Familias{" + "Apellidos=" + Apellidos + ", Apellido=" + Apellido + ", Aldeanos=" + Aldeanos + '}';
+    }
+
  
     
 }

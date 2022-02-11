@@ -14,6 +14,7 @@ import java.util.ArrayList;
 public class Aldeano extends Familias{
     private String nombre;
     private String clase;
+    private int vida;
 
     public String getNombre() {
         return nombre;
@@ -31,10 +32,24 @@ public class Aldeano extends Familias{
         this.clase = clase;
     }
 
-    public Aldeano(String nombre, String clase, String Apellido, ArrayList<Aldeano> Aldeanos) {
+    public int getVida() {
+        return vida;
+    }
+
+    public void setVida(int vida) {
+        this.vida = vida;
+    }
+
+    public Aldeano(String nombre, String clase, int vida, String Apellido, ArrayList<Aldeano> Aldeanos) {
         super(Apellido, Aldeanos);
         this.nombre = nombre;
         this.clase = clase;
+        this.vida = vida;
+    }
+
+    @Override
+    public String toString() {
+        return "Aldeano{" + "nombre=" + nombre + ", clase=" + clase + ", vida=" + vida + '}';
     }
     
 }

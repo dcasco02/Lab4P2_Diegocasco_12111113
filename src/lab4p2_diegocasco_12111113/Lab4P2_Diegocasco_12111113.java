@@ -27,13 +27,26 @@ public class Lab4P2_Diegocasco_12111113 {
                     + "0-Salir\n"
                     + "1-Crear Familia\n"
                     + "2- Crear Aldeano\n"
-                    + "4-Agregar alumno a clase\n"
-                    + "5-Crear Transportista\n"
-                    + "6-Crear Transporte"));
+                    + "3-Imprimir Familais\n"
+                    + "4-Pelear"));
             if(opcion==1){
                 String apellido=JOptionPane.showInputDialog("Ingrese el Apellido: ");
                 Familias.add(new Familias(apellido, Familias));
             }if(opcion==2){
+                String nombre=JOptionPane.showInputDialog("Ingrese el Nombre: ");
+                String apellido=JOptionPane.showInputDialog("Ingrese el Apellido: ");
+                 int vida=Integer.parseInt(
+                        JOptionPane.showInputDialog("Ingrese los anos de experiencia: "));
+                 Familias.add(new Aldeano(nombre, nombre, vida, apellido, Familias));
+            }if(opcion==3){
+                String salida="";
+                for(Object temp: Familias){
+                    if(temp instanceof Familias){
+                        salida=""+Familias.indexOf(temp)+" -"+ temp+"\n";
+                    }
+                }
+                JOptionPane.showMessageDialog(null,salida);
+            }if(opcion==4){
                 
             }
         }

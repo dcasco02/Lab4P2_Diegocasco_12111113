@@ -12,28 +12,39 @@ import java.util.ArrayList;
  * @author dcasc
  */
 public class Familias {
-    private ArrayList <String> Apellido;
-    private ArrayList Aldeanos;
+    private ArrayList Apellidos;
+    private String Apellido;
+    private ArrayList <Aldeano> Aldeanos;
 
-    public ArrayList<String> getApellido() {
+    public ArrayList<String> getApellidos() {
+        return Apellidos;
+    }
+
+    public void setApellidos(ArrayList<String> Apellidos) {
+        this.Apellidos = Apellidos;
+    }
+
+    public String getApellido() {
         return Apellido;
     }
 
-    public void setApellido(ArrayList<String> Apellido) {
+    public void setApellido(String Apellido) {
         this.Apellido = Apellido;
     }
 
-    public ArrayList getAldeanos() {
+    public ArrayList<Aldeano> getAldeanos() {
         return Aldeanos;
     }
 
-    public void setAldeanos(ArrayList Aldeanos) {
+    public void setAldeanos(ArrayList<Aldeano> Aldeanos) {
         this.Aldeanos = Aldeanos;
     }
 
-    public Familias(ArrayList<String> Apellido, ArrayList Aldeanos) {
+    public Familias(String Apellido, ArrayList<Aldeano> Aldeanos) {
         this.Apellido = Apellido;
         this.Aldeanos = Aldeanos;
     }
+
+ 
     
 }

@@ -5,6 +5,8 @@
  */
 package lab4p2_diegocasco_12111113;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author dcasc
@@ -12,6 +14,28 @@ package lab4p2_diegocasco_12111113;
 public class clase_aldeano extends Aldeano {
     private int vida;
     private int ataque;
-    private String clase;
+
+    public int getVida() {
+        return vida;
+    }
+
+    public void setVida(int vida) {
+        this.vida = vida;
+    }
+
+    public int getAtaque() {
+        return ataque;
+    }
+
+    public void setAtaque(int ataque) {
+        this.ataque = ataque;
+    }
+
+    public clase_aldeano(int vida, int ataque, String nombre, String clase, String Apellido, ArrayList<Aldeano> Aldeanos) {
+        super(nombre, clase, Apellido, Aldeanos);
+        this.vida = vida;
+        this.ataque = ataque;
+    }
+    
     
 }

@@ -6,6 +6,7 @@
 package lab4p2_diegocasco_12111113;
 
 import java.util.ArrayList;
+import java.util.Random;
 import javax.swing.JOptionPane;
 
 /**
@@ -19,7 +20,7 @@ public class Lab4P2_Diegocasco_12111113 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Random r=new random();
+        Random r=new Random();
         ArrayList Familias = new ArrayList();
         int opcion=100;
         while(opcion !=0){
@@ -48,17 +49,17 @@ public class Lab4P2_Diegocasco_12111113 {
                     + "5-Explosivo\n"
                     + "6-Supergranjero");
                  if(opcion==1){
-                     clase_aldeano.setAtaque(50);
+                     clase_aldeano.getAtaque.setAtaque(50);
                  }if (opcion==2){
-                     clase_aldeano.setAtaque(0);
+                     clase_aldeano.getAtaque.setAtaque(0);
                  }if(opcion==3){
-                     clase_aldeano.setAtaque(350);
+                     clase_aldeano.getAtaque.setAtaque(350);
                  }if(opcion==4){
-                     clase_aldeano.setAtaque(100);
+                     clase_aldeano.getAtaque.setAtaque(100);
                  }if(opcion==5){
-                     clase_aldeano.setAtaque(250);
+                     clase_aldeano.getAtaque.setAtaque(250);
                  }if(opcion==6){
-                     clase_aldeano.setAtaque(1000);
+                     clase_aldeano.getAtaque.setAtaque(1000);
                  }
             }if(opcion==3){
                 String salida="";
